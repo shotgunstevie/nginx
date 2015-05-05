@@ -1,0 +1,6 @@
+<%= "cd #{node["nginx"]["src_dir"]}" %>
+./configure
+#<%= "./configure \\" %>
+#<%= " --with-pcre=#{node["nginx"]["compile_options"]["--with-pcre"]}" %>
+make
+sudo make install
