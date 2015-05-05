@@ -1,0 +1,185 @@
+I, [2015-05-05T14:21:23.937054 #73760]  INFO -- default-centos-64: -----> Creating <default-centos-64>...
+I, [2015-05-05T14:21:27.300089 #73760]  INFO -- default-centos-64: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-05-05T14:21:27.576537 #73760]  INFO -- default-centos-64: ==> default: Importing base box 'opscode-centos-6.4'...
+I, [2015-05-05T14:21:42.297852 #73760]  INFO -- default-centos-64: [KProgress: 10%[KProgress: 30%[KProgress: 40%[KProgress: 50%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2015-05-05T14:21:43.075103 #73760]  INFO -- default-centos-64: ==> default: Setting the name of the VM: default-centos-64_default_1430860903033_88130
+I, [2015-05-05T14:21:43.673938 #73760]  INFO -- default-centos-64: ==> default: Fixed port collision for 22 => 2222. Now on port 2203.
+I, [2015-05-05T14:21:43.729838 #73760]  INFO -- default-centos-64: ==> default: Clearing any previously set network interfaces...
+I, [2015-05-05T14:21:43.780023 #73760]  INFO -- default-centos-64: ==> default: Preparing network interfaces based on configuration...
+I, [2015-05-05T14:21:43.780619 #73760]  INFO -- default-centos-64:     default: Adapter 1: nat
+I, [2015-05-05T14:21:43.833089 #73760]  INFO -- default-centos-64: ==> default: Forwarding ports...
+I, [2015-05-05T14:21:43.920216 #73760]  INFO -- default-centos-64:     default: 22 => 2203 (adapter 1)
+I, [2015-05-05T14:21:44.073003 #73760]  INFO -- default-centos-64: ==> default: Booting VM...
+I, [2015-05-05T14:21:44.975372 #73760]  INFO -- default-centos-64: ==> default: Waiting for machine to boot. This may take a few minutes...    default: SSH address: 127.0.0.1:2203
+I, [2015-05-05T14:21:44.975687 #73760]  INFO -- default-centos-64:     default: SSH username: vagrant
+I, [2015-05-05T14:21:44.976062 #73760]  INFO -- default-centos-64:     default: SSH auth method: private key
+I, [2015-05-05T14:22:00.142100 #73760]  INFO -- default-centos-64:     default: Warning: Connection timeout. Retrying...
+I, [2015-05-05T14:22:08.875010 #73760]  INFO -- default-centos-64:     default: 
+I, [2015-05-05T14:22:08.875155 #73760]  INFO -- default-centos-64:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2015-05-05T14:22:08.875245 #73760]  INFO -- default-centos-64:     default: this with a newly generated keypair for better security.
+I, [2015-05-05T14:22:09.818741 #73760]  INFO -- default-centos-64:     default: 
+I, [2015-05-05T14:22:09.818847 #73760]  INFO -- default-centos-64:     default: Inserting generated public key within guest...
+I, [2015-05-05T14:22:10.024899 #73760]  INFO -- default-centos-64:     default: Removing insecure key from the guest if its present...
+I, [2015-05-05T14:22:10.161754 #73760]  INFO -- default-centos-64:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2015-05-05T14:22:11.517120 #73760]  INFO -- default-centos-64: ==> default: Machine booted and ready!
+I, [2015-05-05T14:22:11.517711 #73760]  INFO -- default-centos-64: ==> default: Checking for guest additions in VM...
+I, [2015-05-05T14:22:11.568528 #73760]  INFO -- default-centos-64: ==> default: Setting hostname...
+I, [2015-05-05T14:22:17.086574 #73760]  INFO -- default-centos-64: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2015-05-05T14:22:20.626778 #73760]  INFO -- default-centos-64: Vagrant instance <default-centos-64> created.
+I, [2015-05-05T14:22:20.638908 #73760]  INFO -- default-centos-64: Finished creating <default-centos-64> (0m56.69s).
+I, [2015-05-05T14:22:20.642841 #73760]  INFO -- default-centos-64: -----> Converging <default-centos-64>...
+I, [2015-05-05T14:22:20.647732 #73760]  INFO -- default-centos-64: Preparing files for transfer
+I, [2015-05-05T14:22:20.648052 #73760]  INFO -- default-centos-64: Preparing dna.json
+I, [2015-05-05T14:22:20.649364 #73760]  INFO -- default-centos-64: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-05-05T14:22:21.146421 #73760]  INFO -- default-centos-64: Removing non-cookbook files before transfer
+I, [2015-05-05T14:22:21.154590 #73760]  INFO -- default-centos-64: Preparing solo.rb
+I, [2015-05-05T14:22:21.394395 #73760]  INFO -- default-centos-64: -----> Installing Chef Omnibus (install only if missing)
+I, [2015-05-05T14:22:21.394455 #73760]  INFO -- default-centos-64: downloading https://www.chef.io/chef/install.sh
+I, [2015-05-05T14:22:21.394476 #73760]  INFO -- default-centos-64:   to file /tmp/install.sh
+I, [2015-05-05T14:22:21.394493 #73760]  INFO -- default-centos-64: trying wget...
+I, [2015-05-05T14:22:26.577335 #73760]  INFO -- default-centos-64: trying curl...
+I, [2015-05-05T14:22:31.844101 #73760]  INFO -- default-centos-64:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+I, [2015-05-05T14:22:31.844175 #73760]  INFO -- default-centos-64:                           Dload  Upload   Total   Spent    Left  Speed
+I, [2015-05-05T14:22:31.870005 #73760]  INFO -- default-centos-64: 100 18990  100 18990    0     0   3619      0  0:00:05  0:00:05 --:--:--  741k
+I, [2015-05-05T14:22:31.965362 #73760]  INFO -- default-centos-64: Downloading Chef  for el...
+I, [2015-05-05T14:22:31.966497 #73760]  INFO -- default-centos-64: downloading https://www.getchef.com/chef/metadata?v=&prerelease=false&nightlies=false&p=el&pv=6&m=x86_64
+I, [2015-05-05T14:22:31.966557 #73760]  INFO -- default-centos-64:   to file /tmp/install.sh.2914/metadata.txt
+I, [2015-05-05T14:22:31.966578 #73760]  INFO -- default-centos-64: trying wget...
+I, [2015-05-05T14:22:37.134230 #73760]  INFO -- default-centos-64: trying curl...
+I, [2015-05-05T14:22:42.289131 #73760]  INFO -- default-centos-64: url	https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-12.3.0-1.el6.x86_64.rpm
+I, [2015-05-05T14:22:42.291001 #73760]  INFO -- default-centos-64: md5	c19fefcb3d033107e9fbdb3839312584
+I, [2015-05-05T14:22:42.291055 #73760]  INFO -- default-centos-64: sha256	4b7c846a9ad93564cc203a5ac99890431f7d6ad159c424aa89827fd772c9881d
+I, [2015-05-05T14:22:42.292965 #73760]  INFO -- default-centos-64: downloaded metadata file looks valid...
+I, [2015-05-05T14:22:42.311314 #73760]  INFO -- default-centos-64: downloading https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-12.3.0-1.el6.x86_64.rpm
+I, [2015-05-05T14:22:42.311375 #73760]  INFO -- default-centos-64:   to file /tmp/install.sh.2914/chef-12.3.0-1.el6.x86_64.rpm
+I, [2015-05-05T14:22:42.311411 #73760]  INFO -- default-centos-64: trying wget...
+I, [2015-05-05T14:23:00.075511 #73760]  INFO -- default-centos-64: Comparing checksum with sha256sum...
+I, [2015-05-05T14:23:00.409778 #73760]  INFO -- default-centos-64: 
+I, [2015-05-05T14:23:00.409849 #73760]  INFO -- default-centos-64: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-05-05T14:23:00.409878 #73760]  INFO -- default-centos-64: 
+I, [2015-05-05T14:23:00.409901 #73760]  INFO -- default-centos-64: You are installing an omnibus package without a version pin.  If you are installing
+I, [2015-05-05T14:23:00.409922 #73760]  INFO -- default-centos-64: on production servers via an automated process this is DANGEROUS and you will
+I, [2015-05-05T14:23:00.409942 #73760]  INFO -- default-centos-64: be upgraded without warning on new releases, even to new major release.
+I, [2015-05-05T14:23:00.409960 #73760]  INFO -- default-centos-64: Letting the version float is only appropriate in desktop, test, development or
+I, [2015-05-05T14:23:00.409978 #73760]  INFO -- default-centos-64: CI/CD environments.
+I, [2015-05-05T14:23:00.409994 #73760]  INFO -- default-centos-64: 
+I, [2015-05-05T14:23:00.410012 #73760]  INFO -- default-centos-64: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2015-05-05T14:23:00.410029 #73760]  INFO -- default-centos-64: 
+I, [2015-05-05T14:23:00.410046 #73760]  INFO -- default-centos-64: Installing Chef 
+I, [2015-05-05T14:23:00.410062 #73760]  INFO -- default-centos-64: installing with rpm...
+I, [2015-05-05T14:23:00.635388 #73760]  INFO -- default-centos-64: warning: /tmp/install.sh.2914/chef-12.3.0-1.el6.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2015-05-05T14:23:03.691336 #73760]  INFO -- default-centos-64: Preparing...                                                            (100%)#                                           (100%)##                                          (100%)###                                         (100%)####                                        (100%)#####                                       (100%)######                                      (100%)#######                                     (100%)########                                    (100%)#########                                   (100%)##########                                  (100%)###########                                 (100%)############                                (100%)#############                               (100%)##############                              (100%)###############                             (100%)################                            (100%)#################                           (100%)##################                          (100%)###################                         (100%)####################                        (100%)#####################                       (100%)######################                      (100%)#######################                     (100%)########################                    (100%)#########################                   (100%)##########################                  (100%)###########################                 (100%)############################                (100%)#############################               (100%)##############################              (100%)###############################             (100%)################################            (100%)#################################           (100%)##################################          (100%)###################################         (100%)####################################        (100%)#####################################       (100%)######################################      (100%)#######################################     (100%)########################################    (100%)#########################################   (100%)##########################################  (100%)########################################### (100%)########################################### [100%]
+I, [2015-05-05T14:23:09.016586 #73760]  INFO -- default-centos-64:    1:chef                                                               (  1%)#                                           (  3%)##                                          (  6%)###                                         (  8%)####                                        ( 10%)#####                                       ( 13%)######                                      ( 15%)#######                                     ( 17%)########                                    ( 19%)#########                                   ( 22%)##########                                  ( 24%)###########                                 ( 26%)############                                ( 28%)#############                               ( 31%)##############                              ( 33%)###############                             ( 35%)################                            ( 38%)#################                           ( 40%)##################                          ( 42%)###################                         ( 44%)####################                        ( 47%)#####################                       ( 49%)######################                      ( 51%)#######################                     ( 53%)########################                    ( 56%)#########################                   ( 58%)##########################                  ( 60%)###########################                 ( 63%)############################                ( 65%)#############################               ( 67%)##############################              ( 69%)###############################             ( 72%)################################            ( 74%)#################################           ( 76%)##################################          ( 78%)###################################         ( 81%)####################################        ( 83%)#####################################       ( 85%)######################################      ( 88%)#######################################     ( 90%)########################################    ( 92%)#########################################   ( 94%)##########################################  ( 97%)########################################### ( 99%)########################################### [100%]
+I, [2015-05-05T14:23:10.391404 #73760]  INFO -- default-centos-64: Thank you for installing Chef!
+I, [2015-05-05T14:23:10.477021 #73760]  INFO -- default-centos-64: Transferring files to <default-centos-64>
+I, [2015-05-05T14:23:11.976274 #73760]  INFO -- default-centos-64: Starting Chef Client, version 12.3.0
+I, [2015-05-05T14:23:19.082600 #73760]  INFO -- default-centos-64: Compiling Cookbooks...
+I, [2015-05-05T14:23:19.111507 #73760]  INFO -- default-centos-64: Converging 22 resources
+I, [2015-05-05T14:23:19.111667 #73760]  INFO -- default-centos-64: Recipe: nginx::system
+I, [2015-05-05T14:23:19.229273 #73760]  INFO -- default-centos-64: 
+I, [2015-05-05T14:23:19.229415 #73760]  INFO -- default-centos-64:     - alter user root
+I, [2015-05-05T14:23:19.232860 #73760]  INFO -- default-centos-64:  (up to date)
+I, [2015-05-05T14:23:19.233838 #73760]  INFO -- default-centos-64: Recipe: nginx::source
+I, [2015-05-05T14:23:54.681680 #73760]  INFO -- default-centos-64:  (up to date)
+I, [2015-05-05T14:24:07.651347 #73760]  INFO -- default-centos-64:   * yum_package[gc] action install
+I, [2015-05-05T14:24:07.652445 #73760]  INFO -- default-centos-64: 
+I, [2015-05-05T14:24:17.067777 #73760]  INFO -- default-centos-64: 
+I, [2015-05-05T14:24:17.070737 #73760]  INFO -- default-centos-64:     - install version 7.8-6.el6 of package pcre-devel
+I, [2015-05-05T14:24:17.336985 #73760]  INFO -- default-centos-64:   * yum_package[git] action install (up to date)
+I, [2015-05-05T14:24:17.339765 #73760]  INFO -- default-centos-64:  (up to date)
+I, [2015-05-05T14:24:17.339862 #73760]  INFO -- default-centos-64:   * yum_package[gcc-c++] action install (up to date)
+I, [2015-05-05T14:24:17.340759 #73760]  INFO -- default-centos-64:  (up to date)
+I, [2015-05-05T14:24:17.342323 #73760]  INFO -- default-centos-64:  (up to date)
+I, [2015-05-05T14:24:17.344246 #73760]  INFO -- default-centos-64:  (up to date)
+I, [2015-05-05T14:24:17.347402 #73760]  INFO -- default-centos-64:  (up to date)
+I, [2015-05-05T14:24:31.073389 #73760]  INFO -- default-centos-64:   * yum_package[libxml2-devel] action install
+I, [2015-05-05T14:24:31.074291 #73760]  INFO -- default-centos-64:     - install version 2.7.6-17.el6_6.1 of package libxml2-devel
+I, [2015-05-05T14:24:46.469211 #73760]  INFO -- default-centos-64: 
+I, [2015-05-05T14:24:46.471418 #73760]  INFO -- default-centos-64:     - install version 1.1.26-2.el6_3.1 of package libxslt-devel
+I, [2015-05-05T14:25:41.479369 #73760]  INFO -- default-centos-64: 
+I, [2015-05-05T14:25:41.480590 #73760]  INFO -- default-centos-64:     - install version 2.0.35-11.el6 of package gd-devel
+I, [2015-05-05T14:26:37.426116 #73760]  INFO -- default-centos-64: 
+I, [2015-05-05T14:26:37.429745 #73760]  INFO -- default-centos-64:     - install version 1.28-136.el6_6.1 of package perl-ExtUtils-Embed
+I, [2015-05-05T14:26:46.451635 #73760]  INFO -- default-centos-64: 
+I, [2015-05-05T14:26:46.488285 #73760]  INFO -- default-centos-64: 
+I, [2015-05-05T14:26:46.488485 #73760]  INFO -- default-centos-64:     ================================================================================
+I, [2015-05-05T14:26:46.488687 #73760]  INFO -- default-centos-64:     Error executing action `install` on resource 'yum_package[GeoIP-devel]'
+I, [2015-05-05T14:26:46.488816 #73760]  INFO -- default-centos-64:     ================================================================================
+I, [2015-05-05T14:26:46.489027 #73760]  INFO -- default-centos-64:     
+I, [2015-05-05T14:26:46.489153 #73760]  INFO -- default-centos-64:     Chef::Exceptions::Package
+I, [2015-05-05T14:26:46.489249 #73760]  INFO -- default-centos-64:     -------------------------
+I, [2015-05-05T14:26:46.489369 #73760]  INFO -- default-centos-64:     No candidate version available for GeoIP-devel
+I, [2015-05-05T14:26:46.489465 #73760]  INFO -- default-centos-64:     
+I, [2015-05-05T14:26:46.489595 #73760]  INFO -- default-centos-64:     Resource Declaration:
+I, [2015-05-05T14:26:46.489730 #73760]  INFO -- default-centos-64:     ---------------------
+I, [2015-05-05T14:26:46.489850 #73760]  INFO -- default-centos-64:     # In /tmp/kitchen/cookbooks/nginx/recipes/source.rb
+I, [2015-05-05T14:26:46.489968 #73760]  INFO -- default-centos-64:     
+I, [2015-05-05T14:26:46.490193 #73760]  INFO -- default-centos-64:      22:   package pkg
+I, [2015-05-05T14:26:46.490229 #73760]  INFO -- default-centos-64:      23: end
+I, [2015-05-05T14:26:46.490259 #73760]  INFO -- default-centos-64:     
+I, [2015-05-05T14:26:46.490304 #73760]  INFO -- default-centos-64:     Compiled Resource:
+I, [2015-05-05T14:26:46.490336 #73760]  INFO -- default-centos-64:     ------------------
+I, [2015-05-05T14:26:46.490367 #73760]  INFO -- default-centos-64:     # Declared in /tmp/kitchen/cookbooks/nginx/recipes/source.rb:22:in `block in from_file'
+I, [2015-05-05T14:26:46.490478 #73760]  INFO -- default-centos-64:     
+I, [2015-05-05T14:26:46.490524 #73760]  INFO -- default-centos-64:     yum_package("GeoIP-devel") do
+I, [2015-05-05T14:26:46.490555 #73760]  INFO -- default-centos-64:       action :install
+I, [2015-05-05T14:26:46.490585 #73760]  INFO -- default-centos-64:       retries 0
+I, [2015-05-05T14:26:46.490615 #73760]  INFO -- default-centos-64:       retry_delay 2
+I, [2015-05-05T14:26:46.490652 #73760]  INFO -- default-centos-64:       default_guard_interpreter :default
+I, [2015-05-05T14:26:46.490677 #73760]  INFO -- default-centos-64:       package_name "GeoIP-devel"
+I, [2015-05-05T14:26:46.490701 #73760]  INFO -- default-centos-64:       timeout 900
+I, [2015-05-05T14:26:46.490726 #73760]  INFO -- default-centos-64:       flush_cache {:before=>false, :after=>false}
+I, [2015-05-05T14:26:46.490767 #73760]  INFO -- default-centos-64:       declared_type :package
+I, [2015-05-05T14:26:46.490793 #73760]  INFO -- default-centos-64:       cookbook_name :nginx
+I, [2015-05-05T14:26:46.490817 #73760]  INFO -- default-centos-64:       recipe_name "source"
+I, [2015-05-05T14:26:46.490917 #73760]  INFO -- default-centos-64:     end
+I, [2015-05-05T14:26:46.490942 #73760]  INFO -- default-centos-64:     
+I, [2015-05-05T14:26:46.490966 #73760]  INFO -- default-centos-64: 
+I, [2015-05-05T14:26:46.491017 #73760]  INFO -- default-centos-64: Running handlers:
+I, [2015-05-05T14:26:46.491043 #73760]  INFO -- default-centos-64: [2015-05-05T21:26:44+00:00] ERROR: Running exception handlers
+I, [2015-05-05T14:26:46.491102 #73760]  INFO -- default-centos-64: Running handlers complete
+I, [2015-05-05T14:26:46.491128 #73760]  INFO -- default-centos-64: [2015-05-05T21:26:44+00:00] ERROR: Exception handlers complete
+I, [2015-05-05T14:26:46.493445 #73760]  INFO -- default-centos-64: [2015-05-05T21:26:44+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2015-05-05T14:26:46.499265 #73760]  INFO -- default-centos-64: Chef Client failed. 7 resources updated in 214.636663562 seconds
+I, [2015-05-05T14:26:46.666816 #73760]  INFO -- default-centos-64: [2015-05-05T21:26:45+00:00] ERROR: yum_package[GeoIP-devel] (nginx::source line 22) had an error: Chef::Exceptions::Package: No candidate version available for GeoIP-devel
+I, [2015-05-05T14:26:46.762904 #73760]  INFO -- default-centos-64: [2015-05-05T21:26:45+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2015-05-05T14:26:46.899309 #73760] ERROR -- default-centos-64: Converge failed on instance <default-centos-64>.
+E, [2015-05-05T14:26:46.903441 #73760] ERROR -- default-centos-64: ------Exception-------
+E, [2015-05-05T14:26:46.903521 #73760] ERROR -- default-centos-64: Class: Kitchen::ActionFailed
+E, [2015-05-05T14:26:46.903558 #73760] ERROR -- default-centos-64: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-05-05T14:26:46.903592 #73760] ERROR -- default-centos-64: ---Nested Exception---
+E, [2015-05-05T14:26:46.903611 #73760] ERROR -- default-centos-64: Class: Kitchen::SSHFailed
+E, [2015-05-05T14:26:46.903631 #73760] ERROR -- default-centos-64: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-05-05T14:26:46.903664 #73760] ERROR -- default-centos-64: ------Backtrace-------
+E, [2015-05-05T14:26:46.903695 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:152:in `rescue in run_remote'
+E, [2015-05-05T14:26:46.903780 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:148:in `run_remote'
+E, [2015-05-05T14:26:46.903839 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:50:in `block in converge'
+E, [2015-05-05T14:26:46.903893 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-05-05T14:26:46.903944 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2015-05-05T14:26:46.903996 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2015-05-05T14:26:46.904060 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-05-05T14:26:46.904109 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-05-05T14:26:46.904141 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-05-05T14:26:46.904175 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-05-05T14:26:46.904253 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-05-05T14:26:46.904286 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-05-05T14:26:46.904351 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-05-05T14:26:46.904398 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-05-05T14:26:46.904446 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-05-05T14:26:46.904499 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-05-05T14:26:46.904550 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-05-05T14:26:46.904668 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-05-05T14:26:46.904721 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-05-05T14:26:46.904793 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-05-05T14:26:46.904831 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-05-05T14:26:46.904886 #73760] ERROR -- default-centos-64: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-05-05T14:26:46.904919 #73760] ERROR -- default-centos-64: ----------------------
+I, [2015-05-05T14:27:18.251864 #74058]  INFO -- default-centos-64: -----> Destroying <default-centos-64>...
+I, [2015-05-05T14:27:20.651317 #74058]  INFO -- default-centos-64: ==> default: Forcing shutdown of VM...
+I, [2015-05-05T14:27:21.814690 #74058]  INFO -- default-centos-64: ==> default: Destroying VM and associated drives...
+I, [2015-05-05T14:27:22.081146 #74058]  INFO -- default-centos-64: Vagrant instance <default-centos-64> destroyed.
+I, [2015-05-05T14:27:22.082159 #74058]  INFO -- default-centos-64: Finished destroying <default-centos-64> (0m3.83s).

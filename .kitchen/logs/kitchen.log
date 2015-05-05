@@ -1,0 +1,46 @@
+I, [2015-05-05T14:08:13.763987 #72837]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+E, [2015-05-05T14:08:13.764744 #72837] ERROR -- Kitchen: ------Exception-------
+E, [2015-05-05T14:08:13.764828 #72837] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-05-05T14:08:13.764867 #72837] ERROR -- Kitchen: Message: Kitchen YAML file /Users/enaknur/cookbooks/nginx/.kitchen.yml does not exist.
+E, [2015-05-05T14:08:13.764900 #72837] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-05-05T14:08:13.764929 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:74:in `read'
+E, [2015-05-05T14:08:13.764959 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:139:in `data'
+E, [2015-05-05T14:08:13.764988 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:118:in `suites'
+E, [2015-05-05T14:08:13.765017 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:169:in `filter_instances'
+E, [2015-05-05T14:08:13.765046 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:128:in `build_instances'
+E, [2015-05-05T14:08:13.765074 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:104:in `instances'
+E, [2015-05-05T14:08:13.765103 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2015-05-05T14:08:13.765131 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2015-05-05T14:08:13.765159 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:38:in `block in call'
+E, [2015-05-05T14:08:13.765187 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-05-05T14:08:13.765215 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:37:in `call'
+E, [2015-05-05T14:08:13.765243 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-05-05T14:08:13.765284 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:161:in `block (2 levels) in <class:CLI>'
+E, [2015-05-05T14:08:13.765313 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-05-05T14:08:13.765340 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-05-05T14:08:13.765369 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-05-05T14:08:13.765396 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-05-05T14:08:13.765424 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-05-05T14:08:13.765452 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-05-05T14:08:13.765480 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-05-05T14:08:13.765507 #72837] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `<top (required)>'
+E, [2015-05-05T14:08:13.765535 #72837] ERROR -- Kitchen: /usr/bin/kitchen:15:in `load'
+E, [2015-05-05T14:08:13.765562 #72837] ERROR -- Kitchen: /usr/bin/kitchen:15:in `<main>'
+E, [2015-05-05T14:08:13.765589 #72837] ERROR -- Kitchen: ----------------------
+I, [2015-05-05T14:08:57.049672 #73272]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-05-05T14:08:59.784897 #73272]  INFO -- Kitchen: -----> Creating <default-centos-71>...
+I, [2015-05-05T14:09:46.765490 #73272]  INFO -- Kitchen: -----> Converging <default-centos-71>...
+I, [2015-05-05T14:14:35.115237 #73272]  INFO -- Kitchen: -----> Kitchen is finished. (5m38.07s)
+I, [2015-05-05T14:14:49.999775 #73449]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-05-05T14:14:52.487262 #73449]  INFO -- Kitchen: -----> Destroying <default-centos-71>...
+I, [2015-05-05T14:14:58.267057 #73449]  INFO -- Kitchen: -----> Kitchen is finished. (0m8.27s)
+I, [2015-05-05T14:15:22.569237 #73760]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-05-05T14:15:23.327705 #73760]  INFO -- Kitchen: -----> Creating <default-centos-71>...
+I, [2015-05-05T14:16:13.995103 #73760]  INFO -- Kitchen: -----> Converging <default-centos-71>...
+I, [2015-05-05T14:21:23.936936 #73760]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+I, [2015-05-05T14:22:20.639347 #73760]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+E, [2015-05-05T14:26:46.943685 #73760] ERROR -- Kitchen: Converge failed on instance <default-centos-64>.
+I, [2015-05-05T14:27:09.676785 #74058]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-05-05T14:27:12.172171 #74058]  INFO -- Kitchen: -----> Destroying <default-centos-71>...
+I, [2015-05-05T14:27:18.249003 #74058]  INFO -- Kitchen: -----> Destroying <default-centos-64>...
+I, [2015-05-05T14:27:22.084152 #74058]  INFO -- Kitchen: -----> Kitchen is finished. (0m12.41s)
