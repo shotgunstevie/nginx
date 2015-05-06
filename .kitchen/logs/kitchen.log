@@ -104,3 +104,87 @@ I, [2015-05-05T21:17:09.024594 #8920]  INFO -- Kitchen: -----> Kitchen is finish
 I, [2015-05-05T21:30:11.888612 #10230]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
 I, [2015-05-05T21:30:13.860299 #10230]  INFO -- Kitchen: -----> Converging <default-centos-71>...
 E, [2015-05-05T21:33:49.135744 #10230] ERROR -- Kitchen: Converge failed on instance <default-centos-71>.
+I, [2015-05-05T21:36:01.733588 #10986]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-05-05T21:36:04.089589 #10986]  INFO -- Kitchen: -----> Destroying <default-centos-71>...
+I, [2015-05-05T21:36:09.819663 #10986]  INFO -- Kitchen: -----> Kitchen is finished. (0m8.08s)
+I, [2015-05-05T21:36:10.333280 #11027]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-05-05T21:36:10.933686 #11027]  INFO -- Kitchen: -----> Creating <default-centos-71>...
+I, [2015-05-05T21:36:59.522219 #11027]  INFO -- Kitchen: -----> Converging <default-centos-71>...
+I, [2015-05-05T21:39:31.175832 #11027]  INFO -- Kitchen: -----> Kitchen is finished. (3m20.84s)
+I, [2015-05-05T21:41:31.677272 #11420]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-05-05T21:41:34.128982 #11420]  INFO -- Kitchen: -----> Converging <default-centos-71>...
+I, [2015-05-05T21:41:43.934693 #11420]  INFO -- Kitchen: -----> Creating <default-centos-63>...
+E, [2015-05-05T21:41:48.991691 #11420] ERROR -- Kitchen: ------Exception-------
+E, [2015-05-05T21:41:48.991800 #11420] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-05-05T21:41:48.991849 #11420] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'opscode-centos-6.3' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Adding box 'opscode-centos-6.3' (v0) for provider: virtualbox
+    default: Downloading: https://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.3_chef-provisionerless.box
+[K    default: Progress: 0% (Rate: 0/s, Estimated time remaining: --:--:--)[K
+STDERR: An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+The requested URL returned error: 404 Not Found
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1]
+E, [2015-05-05T21:41:48.991885 #11420] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-05-05T21:41:48.991906 #11420] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-05-05T21:41:48.991925 #11420] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'opscode-centos-6.3' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Adding box 'opscode-centos-6.3' (v0) for provider: virtualbox
+    default: Downloading: https://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.3_chef-provisionerless.box
+[K    default: Progress: 0% (Rate: 0/s, Estimated time remaining: --:--:--)[K
+STDERR: An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+The requested URL returned error: 404 Not Found
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2015-05-05T21:41:48.991951 #11420] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-05-05T21:41:48.991969 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-05-05T21:41:48.991989 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-05-05T21:41:48.992031 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-05-05T21:41:48.992134 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2015-05-05T21:41:48.992159 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2015-05-05T21:41:48.992181 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-05-05T21:41:48.992203 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-05-05T21:41:48.992225 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:413:in `call'
+E, [2015-05-05T21:41:48.992246 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:413:in `block in synchronize_or_call'
+E, [2015-05-05T21:41:48.992268 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:411:in `synchronize'
+E, [2015-05-05T21:41:48.992288 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:411:in `synchronize_or_call'
+E, [2015-05-05T21:41:48.992311 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-05-05T21:41:48.992332 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-05-05T21:41:48.992350 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-05-05T21:41:48.992372 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-05-05T21:41:48.992393 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-05-05T21:41:48.992413 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-05-05T21:41:48.992435 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-05-05T21:41:48.992457 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-05-05T21:41:48.992478 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-05-05T21:41:48.992499 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-05-05T21:41:48.992522 #11420] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-05-05T21:41:48.992543 #11420] ERROR -- Kitchen: ----------------------
+I, [2015-05-05T21:42:15.318970 #11707]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-05-05T21:42:17.187450 #11707]  INFO -- Kitchen: -----> Converging <default-centos-71>...
+I, [2015-05-05T21:42:26.782230 #11707]  INFO -- Kitchen: -----> Creating <default-centos-66>...
+I, [2015-05-05T21:44:05.655133 #11707]  INFO -- Kitchen: -----> Converging <default-centos-66>...
+I, [2015-05-05T21:47:46.470293 #11707]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+I, [2015-05-05T21:48:58.014222 #11707]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+I, [2015-05-05T21:51:42.837186 #11707]  INFO -- Kitchen: -----> Kitchen is finished. (9m27.51s)
+E, [2015-05-05T21:55:07.796813 #12892] ERROR -- Kitchen: 
+Argument `' returned multiple results:
+  * default-centos-71
+  * default-centos-66
+  * default-centos-64
+
+
