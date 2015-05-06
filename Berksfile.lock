@@ -2,17 +2,9 @@ DEPENDENCIES
   nginx
     path: .
     metadata: true
-  supervisor
+  yum
 
 GRAPH
-  build-essential (2.2.3)
   nginx (0.1.0)
-    supervisor (>= 0.0.0)
-  python (1.4.6)
-    build-essential (>= 0.0.0)
-    yum-epel (>= 0.0.0)
-  supervisor (0.4.12)
-    python (>= 0.0.0)
+    yum (>= 0.0.0)
   yum (3.6.0)
-  yum-epel (0.6.0)
-    yum (~> 3.0)
