@@ -1,0 +1,6 @@
+---
+hostname: 127.0.0.1
+username: vagrant
+ssh_key: "/Users/enaknur/cookbooks/nginx/.kitchen/kitchen-vagrant/default-centos-66/.vagrant/machines/default/virtualbox/private_key"
+port: '2203'
+last_action: converge
