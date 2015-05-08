@@ -2,5 +2,5 @@
 hostname: 127.0.0.1
 username: vagrant
 ssh_key: "/Users/enaknur/cookbooks/nginx/.kitchen/kitchen-vagrant/default-centos-71/.vagrant/machines/default/virtualbox/private_key"
-port: '2202'
+port: '2222'
 last_action: converge

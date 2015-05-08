@@ -188,3 +188,63 @@ Argument `' returned multiple results:
   * default-centos-64
 
 
+I, [2015-05-05T22:00:03.581107 #14357]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-05-05T22:00:05.935005 #14357]  INFO -- Kitchen: -----> Destroying <default-centos-71>...
+I, [2015-05-05T22:00:12.288185 #14357]  INFO -- Kitchen: -----> Kitchen is finished. (0m8.71s)
+I, [2015-05-05T22:00:13.868943 #14396]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-05-05T22:00:15.461850 #14396]  INFO -- Kitchen: -----> Creating <default-centos-71>...
+I, [2015-05-05T22:01:03.149405 #14396]  INFO -- Kitchen: -----> Converging <default-centos-71>...
+I, [2015-05-05T22:03:42.069114 #14396]  INFO -- Kitchen: -----> Kitchen is finished. (3m28.20s)
+I, [2015-05-06T12:49:29.189954 #15357]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-05-06T12:49:31.711580 #15357]  INFO -- Kitchen: -----> Converging <default-centos-71>...
+E, [2015-05-06T12:49:34.268351 #15357] ERROR -- Kitchen: ------Exception-------
+E, [2015-05-06T12:49:34.268446 #15357] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-05-06T12:49:34.268485 #15357] ERROR -- Kitchen: Message: Failed to complete #converge action: [Connection refused - connect(2) for "127.0.0.1" port 2202]
+E, [2015-05-06T12:49:34.268521 #15357] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-05-06T12:49:34.268595 #15357] ERROR -- Kitchen: Class: Errno::ECONNREFUSED
+E, [2015-05-06T12:49:34.268630 #15357] ERROR -- Kitchen: Message: Connection refused - connect(2) for "127.0.0.1" port 2202
+E, [2015-05-06T12:49:34.268665 #15357] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-05-06T12:49:34.268697 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `initialize'
+E, [2015-05-06T12:49:34.268718 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `open'
+E, [2015-05-06T12:49:34.268739 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `block in initialize'
+E, [2015-05-06T12:49:34.268758 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/timeout.rb:76:in `timeout'
+E, [2015-05-06T12:49:34.268777 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/timeout.rb:127:in `timeout'
+E, [2015-05-06T12:49:34.268797 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:67:in `initialize'
+E, [2015-05-06T12:49:34.268816 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh.rb:207:in `new'
+E, [2015-05-06T12:49:34.268835 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh.rb:207:in `start'
+E, [2015-05-06T12:49:34.268854 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:201:in `establish_connection'
+E, [2015-05-06T12:49:34.268872 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:184:in `session'
+E, [2015-05-06T12:49:34.268891 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:236:in `exec_with_exit'
+E, [2015-05-06T12:49:34.268910 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:81:in `exec'
+E, [2015-05-06T12:49:34.268956 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:150:in `run_remote'
+E, [2015-05-06T12:49:34.268976 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:46:in `block in converge'
+E, [2015-05-06T12:49:34.268994 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-05-06T12:49:34.269013 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2015-05-06T12:49:34.269031 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2015-05-06T12:49:34.269050 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-05-06T12:49:34.269069 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-05-06T12:49:34.269109 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-05-06T12:49:34.269130 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-05-06T12:49:34.269148 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-05-06T12:49:34.269167 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-05-06T12:49:34.269185 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-05-06T12:49:34.269204 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-05-06T12:49:34.269222 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-05-06T12:49:34.269240 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-05-06T12:49:34.269258 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-05-06T12:49:34.269276 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-05-06T12:49:34.269295 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-05-06T12:49:34.269321 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-05-06T12:49:34.269340 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-05-06T12:49:34.269388 #15357] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-05-06T12:49:34.269408 #15357] ERROR -- Kitchen: ----------------------
+I, [2015-05-06T12:49:47.469242 #15406]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-05-06T12:49:48.104074 #15406]  INFO -- Kitchen: -----> Destroying <default-centos-71>...
+I, [2015-05-06T12:49:54.002392 #15406]  INFO -- Kitchen: -----> Kitchen is finished. (0m6.53s)
+I, [2015-05-06T12:49:54.459170 #15449]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-05-06T12:49:55.026579 #15449]  INFO -- Kitchen: -----> Creating <default-centos-71>...
+I, [2015-05-06T12:50:41.618537 #15449]  INFO -- Kitchen: -----> Converging <default-centos-71>...
+I, [2015-05-06T12:52:32.337294 #15449]  INFO -- Kitchen: -----> Kitchen is finished. (2m37.88s)
+I, [2015-05-08T14:04:52.097366 #15889]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-05-08T14:04:54.422538 #15889]  INFO -- Kitchen: -----> Converging <default-centos-71>...
+I, [2015-05-08T14:05:31.621440 #15889]  INFO -- Kitchen: -----> Kitchen is finished. (0m39.52s)
